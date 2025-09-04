@@ -1,0 +1,6 @@
+runtime: python311
+entrypoint: gunicorn -b :$PORT run_app:app
+
+env_variables:
+  GROK3_API_URL: "https://api.grok3.com/explain"
+  GROK3_API_KEY: "123456"
